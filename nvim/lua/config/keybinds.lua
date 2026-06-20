@@ -19,23 +19,6 @@ vim.keymap.set("n", "<leader>x", "<cmd>wq<CR>", { desc = "Save & quit" })
 -- lazy
 vim.keymap.set("n", "<leader>l", "<cmd>Lazy<cr>", { desc = "Lazy" })
 
--- Bottom terminal (horizontal split, fixed height)
-vim.keymap.set("n", "<leader>t", function()
-  vim.cmd("botright 15split")
-  vim.cmd("terminal")
-  vim.cmd("startinsert")
-end, { desc = "Terminal (bottom)" })
-
--- Side terminal (vertical split, right side)
-vim.keymap.set("n", "<leader>T", function()
-  vim.cmd("rightbelow vsplit")
-  vim.cmd("terminal")
-  vim.cmd("startinsert")
-end, { desc = "Terminal (right)" })
-
--- Terminal: leave terminal-mode with Esc
-vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { noremap = true, silent = true })
-
 -- Alows lsp to jump acros diferent files
 vim.api.nvim_create_autocmd("LspAttach", {
   callback = function(args)
