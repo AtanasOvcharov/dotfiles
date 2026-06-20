@@ -27,5 +27,35 @@ return {
 	    require("telescope").load_extension("ui-select")
 	end
     },
+    {
+	"nvim-telescope/telescope-dap.nvim",
+	dependencies = {
+	    "nvim-telescope/telescope.nvim",
+	    "mfussenegger/nvim-dap",
+	},
+	config = function()
+	    require("telescope").load_extension("dap")
+
+	    vim.keymap.set("n", "<leader>dc", function()
+		require("telescope").extensions.dap.commands()
+	    end, { desc = "DAP Commands" })
+
+	    vim.keymap.set("n", "<leader>dC", function()
+		require("telescope").extensions.dap.configurations()
+	    end, { desc = "DAP Configurations" })
+
+	    vim.keymap.set("n", "<leader>dB", function()
+		require("telescope").extensions.dap.list_breakpoints()
+	    end, { desc = "DAP Breakpoints" })
+
+	    vim.keymap.set("n", "<leader>dv", function()
+		require("telescope").extensions.dap.variables()
+	    end, { desc = "DAP Variables" })
+
+	    vim.keymap.set("n", "<leader>df", function()
+		require("telescope").extensions.dap.frames()
+	    end, { desc = "DAP Frames" })
+	end,
+    },
 }
 
