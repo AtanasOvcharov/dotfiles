@@ -9,4 +9,6 @@ zvm_after_init() {
 
   # autosuggestion accept (Ctrl+Space)
   bindkey '^ ' autosuggest-accept
+
+  bindkey '^F' _fzf_file_no_hidden
 } 
