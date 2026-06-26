@@ -1,12 +1,11 @@
 # Better ls 
-alias ls='eza --icons=auto'
-alias ll='eza --icons=auto -l --git'
-alias la='eza --icons=auto -la --git'
+alias ls='eza --group-directories-first --icons'
+alias ll='eza -l --group-directories-first --icons --git'
+alias la='eza -la --group-directories-first --icons --git'
 
-alias tree='eza --icons=auto --tree'
-alias tree1='eza --icons=auto --tree --level=1'
-alias tree2='eza --icons=auto --tree --level=2'
-alias tree3='eza --icons=auto --tree --level=3'
+alias tree1='eza --tree --level=1 --icons --group-directories-first --git-ignore'
+alias tree2='eza --tree --level=2 --icons --group-directories-first --git-ignore'
+alias tree3='eza --tree --level=3 --icons --group-directories-first --git-ignore'
 
 compdef eza=ls # reuse the ls completion for eza
 
