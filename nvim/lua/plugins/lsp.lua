@@ -3,7 +3,6 @@ return {
 		"williamboman/mason.nvim",
 		config = true,
 	},
-
 	{
 		"mason-org/mason-lspconfig.nvim",
 		dependencies = { "williamboman/mason.nvim" },
@@ -12,11 +11,11 @@ return {
 				"lua_ls",
 				"clangd",
 				"neocmake",
+				"marksman",
 			},
 			automatic_installation = true,
 		},
 	},
-
 	{
 		"neovim/nvim-lspconfig",
 		dependencies = {
@@ -33,6 +32,7 @@ return {
 				servers.lua_ls(caps),
 				servers.clangd(caps),
 				servers.neocmake(caps),
+				servers.marksman(caps),
 			}
 
 			local names = {}

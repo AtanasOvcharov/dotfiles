@@ -49,4 +49,14 @@ function M.neocmake(caps)
 	}
 end
 
+function M.marksman(caps)
+	return {
+		name = "marksman",
+		config = {
+			capabilities = caps,
+			filetypes = { "markdown", "markdown.mdx" },
+		},
+	}
+end
+
 return M

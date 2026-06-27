@@ -10,6 +10,8 @@ return {
 			cpp = { "clang_format" },
 			cmake = { "gersemi" },
 			cmake_lists = { "gersemi" },
+			markdown = { "prettier" },
+			["markdown.mdx"] = { "prettier" },
 		},
 		format_on_save = {
 			timeout_ms = 1000,
