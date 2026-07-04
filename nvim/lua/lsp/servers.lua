@@ -6,7 +6,7 @@ function M.lua_ls(caps)
 		name = "lua_ls",
 		config = {
 			capabilities = caps,
-			settings = { Lua = { diagnostics = { globals = { "vim" } } } },
+			settings = { Lua = { diagnostics = { globals = { "vim", "Snacks" } } } },
 		},
 	}
 end
