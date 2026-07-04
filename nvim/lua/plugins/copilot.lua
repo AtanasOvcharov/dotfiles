@@ -11,9 +11,9 @@ return {
 			trigger_on_accept = true,
 			hide_during_completions = true,
 			keymap = {
-				accept = "<C-i>",
-				accept_word = "<C-w>",
-				accept_line = "<C-I>",
+				accept = "<C-g>",
+				accept_word = "<M-w>",
+				accept_line = "<M-Enter>",
 				next = "<M-]>",
 				prev = "<M-[>",
 				dismiss = "<C-]>",
