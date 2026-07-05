@@ -24,7 +24,7 @@ zplugin-update() {
 
 # --- zsh-autosuggestions ---
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)   # history first, then completion
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'          # grey; raise number if too dim
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#6c7086' # Catppuccin Overlay0
 ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20              # skip suggesting on huge pastes
 ZSH_AUTOSUGGEST_MANUAL_REBIND=1                 # small speedup
 _zplugin_load zsh-users zsh-autosuggestions
@@ -41,8 +41,28 @@ ZVM_OPPEND_MODE_CURSOR=$ZVM_CURSOR_UNDERLINE
 _zplugin_load jeffreytse zsh-vi-mode
 
 # --- zsh-history-substring-search ---
-HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND='bg=cyan,fg=black,bold'
-HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND='bg=red,fg=white,bold'
+HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND='bg=#89b4fa,fg=#1e1e2e,bold'
+HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND='bg=#f38ba8,fg=#1e1e2e,bold'
 HISTORY_SUBSTRING_SEARCH_FUZZY=1            # match words in any order
 HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=1    # no duplicate matches
 _zplugin_load zsh-users zsh-history-substring-search
+
+
+# --- fast-syntax-highlighting: Catppuccin Mocha-ish colors ---
+# These styles are read by fast-syntax-highlighting after it loads.
+typeset -gA FAST_HIGHLIGHT_STYLES
+FAST_HIGHLIGHT_STYLES[command]='fg=#89b4fa,bold'
+FAST_HIGHLIGHT_STYLES[alias]='fg=#89b4fa,bold'
+FAST_HIGHLIGHT_STYLES[builtin]='fg=#89b4fa,bold'
+FAST_HIGHLIGHT_STYLES[function]='fg=#89b4fa,bold'
+FAST_HIGHLIGHT_STYLES[path]='fg=#a6e3a1'
+FAST_HIGHLIGHT_STYLES[path_pathseparator]='fg=#6c7086'
+FAST_HIGHLIGHT_STYLES[single-hyphen-option]='fg=#f9e2af'
+FAST_HIGHLIGHT_STYLES[double-hyphen-option]='fg=#f9e2af'
+FAST_HIGHLIGHT_STYLES[single-quoted-argument]='fg=#a6e3a1'
+FAST_HIGHLIGHT_STYLES[double-quoted-argument]='fg=#a6e3a1'
+FAST_HIGHLIGHT_STYLES[dollar-quoted-argument]='fg=#a6e3a1'
+FAST_HIGHLIGHT_STYLES[variable]='fg=#f5c2e7'
+FAST_HIGHLIGHT_STYLES[assign]='fg=#f5c2e7'
+FAST_HIGHLIGHT_STYLES[comment]='fg=#6c7086,italic'
+FAST_HIGHLIGHT_STYLES[unknown-token]='fg=#f38ba8,bold'

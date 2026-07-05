@@ -16,7 +16,11 @@ export STARSHIP_CONFIG="$ZDOTDIR/starship.toml"
 eval "$(starship init zsh)"
 
 # --- Batcat theme ---
-export BAT_THEME="GitHub"
+export BAT_THEME="Catppuccin Mocha"
+
+# --- Go ---
+export PATH=$PATH:$HOME/.local/opt/go/bin
+export PATH=$PATH:$HOME/go/bin
 
 # --- PATH ---
 export PATH="$HOME/.local/bin:$PATH"
