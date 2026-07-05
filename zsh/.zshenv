@@ -13,7 +13,6 @@ export STARSHIP_CONFIG="$ZDOTDIR/starship.toml"
 
 # --- Starship ---
 export STARSHIP_CONFIG="$ZDOTDIR/starship.toml"
-eval "$(starship init zsh)"
 
 # --- Batcat theme ---
 export BAT_THEME="Catppuccin Mocha"

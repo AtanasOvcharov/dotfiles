@@ -15,5 +15,8 @@ alias cat='batcat'
 # Disk usage
 alias df='df -h'
 
+# Zoxide
+alias zz='zi'
+
 # Git 
 alias gst='git status'

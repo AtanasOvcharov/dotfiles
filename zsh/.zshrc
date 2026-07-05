@@ -32,6 +32,12 @@ if command -v fzf >/dev/null 2>&1; then
   fi
 fi
 
+# --- Smart directory jumping ---
+eval "$(zoxide init zsh)"
+
+# --- Starship ---
+eval "$(starship init zsh)"
+
 # --- Config files ---
 source "$ZDOTDIR/fzf.zsh"
 source "$ZDOTDIR/aliases.zsh"
