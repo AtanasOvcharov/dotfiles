@@ -17,4 +17,3 @@ alias df='df -h'
 
 # Git 
 alias gst='git status'
-alias glog='git log --oneline --graph --decorate -n'
