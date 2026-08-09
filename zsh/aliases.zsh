@@ -18,8 +18,11 @@ alias df='df -h'
 # Zoxide
 alias zz='zi'
 
+# Clear terminal
+alias cl='clear'
+
 # Git 
 alias gst='git status'
 
-# Clear terminal
-alias cl='clear'
+git_log_format='--graph --abbrev-commit --decorate --format=format:"%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)"'
+alias gl="git log $git_log_format"
