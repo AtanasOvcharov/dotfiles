@@ -20,3 +20,6 @@ alias zz='zi'
 
 # Git 
 alias gst='git status'
+
+# Clear terminal
+alias cl='clear'
