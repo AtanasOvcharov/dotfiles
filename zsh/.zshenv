@@ -11,9 +11,6 @@ export VISUAL="nvim"
 # --- Starship ---
 export STARSHIP_CONFIG="$ZDOTDIR/starship.toml"
 
-# --- Starship ---
-export STARSHIP_CONFIG="$ZDOTDIR/starship.toml"
-
 # --- Batcat theme ---
 export BAT_THEME="Catppuccin Mocha"
 
@@ -23,3 +20,6 @@ export PATH=$PATH:$HOME/go/bin
 
 # --- PATH ---
 export PATH="$HOME/.local/bin:$PATH"
+
+# --- STM32Cube Programmer ---
+export PATH="$HOME/apps/stm32cube-programmer/bin:$PATH"
