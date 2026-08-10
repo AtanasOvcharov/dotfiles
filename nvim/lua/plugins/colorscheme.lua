@@ -63,4 +63,8 @@ return {
 			sync_with_system()
 		end,
 	},
+	{
+		"projekt0n/github-nvim-theme",
+		name = "github-theme",
+	},
 }
