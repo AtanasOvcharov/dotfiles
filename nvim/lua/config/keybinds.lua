@@ -22,3 +22,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
 })
 
 vim.keymap.set("n", "gl", vim.diagnostic.open_float, { silent = true, desc = "Line diagnostics" })
+
+-- buffer navigation
+vim.keymap.set("n", "<C-b>", "<C-^>", { desc = "Go to alternate file" })
