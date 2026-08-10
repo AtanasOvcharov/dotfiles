@@ -10,6 +10,9 @@ vim.keymap.set("n", "<leader>Q", "<cmd>qall<CR>", { desc = "Quit all" })
 
 vim.keymap.set("n", "<leader>x", "<cmd>wq<CR>", { desc = "Save & quit" })
 
+-- clear search highlight
+vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
+
 -- LSP attach maps
 vim.api.nvim_create_autocmd("LspAttach", {
 	callback = function(args)
