@@ -7,3 +7,4 @@ vim.opt.shiftwidth = 4
 vim.opt.softtabstop = 4
 vim.opt.expandtab = false
 vim.g.c_syntax_for_h = 1
+vim.opt.splitright = true
