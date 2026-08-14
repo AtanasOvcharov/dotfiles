@@ -27,6 +27,14 @@ return {
 				},
 			},
 		},
+		terminal = {
+			enabled = true,
+			win = {
+				position = "float",
+				width = 0.8,
+				height = 0.8,
+			}
+		},
 	},
 	keys = {
 		-- Smart find and quick access
@@ -54,6 +62,7 @@ return {
 		{ "<leader>sr", function() Snacks.picker.resume() end, desc = "Resume Picker" },
 		{ "<leader>su", function() Snacks.picker.undo() end, desc = "Undo History" },
 		{ "<leader>sw", function() Snacks.picker.grep_word() end, desc = "Grep Word", mode = { "n", "x" } },
+		{ "<leader>st", function() Snacks.terminal() end, desc = "Terminal", mode = { "n", "t" } },
 		{ "<leader>ss", function() Snacks.picker.lsp_symbols() end, desc = "LSP Symbols" },
 
 		-- Git operations
