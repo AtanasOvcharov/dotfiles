@@ -9,6 +9,15 @@ return {
 			vim.o.foldlevelstart = 99
 			vim.o.foldenable = true
 
+			vim.opt.fillchars = {
+				foldopen = "",
+				foldclose = "",
+				fold = " ",
+				foldsep = " ",
+				diff = "╱",
+				eob = " ",
+			}
+
 			vim.keymap.set("n", "zR", require("ufo").openAllFolds)
 			vim.keymap.set("n", "zM", require("ufo").closeAllFolds)
 
