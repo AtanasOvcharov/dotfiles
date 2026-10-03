@@ -1,5 +1,8 @@
 nvim/lazy-lock.json
+
 zsh/plugins
 zsh/.zcompdump
+zsh/.zshenv.local
+
 tmux/plugins/
 tmux/theme.conf

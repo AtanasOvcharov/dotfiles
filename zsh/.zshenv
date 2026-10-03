@@ -14,12 +14,5 @@ export STARSHIP_CONFIG="$ZDOTDIR/starship.toml"
 # --- Batcat theme ---
 export BAT_THEME="Catppuccin Mocha"
 
-# --- Go ---
-export PATH=$PATH:$HOME/.local/opt/go/bin
-export PATH=$PATH:$HOME/go/bin
-
-# --- PATH ---
-export PATH="$HOME/.local/bin:$PATH"
-
-# --- STM32Cube Programmer ---
-export PATH="$HOME/apps/stm32cube-programmer/bin:$PATH"
+# Source local zshenv if it exists
+[[ -r "$ZDOTDIR/.zshenv.local" ]] && source "$ZDOTDIR/.zshenv.local"
