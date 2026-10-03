@@ -24,5 +24,6 @@ alias cl='clear'
 # Git 
 alias gst='git status'
 
-git_log_format='--graph --abbrev-commit --decorate --format=format:"%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)"'
+git_log_format='--graph --abbrev-commit --decorate --format=format:"%C(bold blue)%h%C(reset) - %<(50,trunc)%s %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)"'
 alias gl="git log $git_log_format"
+
