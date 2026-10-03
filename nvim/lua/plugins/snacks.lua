@@ -31,9 +31,12 @@ return {
 			enabled = true,
 			win = {
 				position = "float",
-				width = 0.8,
-				height = 0.8,
-			}
+				width = 0.58,
+				height = 0.32,
+				row = 0.64,
+				col = 0.4,
+				border = "rounded",
+			},
 		},
 	},
 	keys = {
