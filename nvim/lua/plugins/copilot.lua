@@ -10,7 +10,7 @@ return {
 				debounce = 75,
 				auto_trigger = true,
 				trigger_on_accept = true,
-				hide_during_completions = true,
+				hide_during_completions = false,
 				keymap = {
 					accept = "<C-g>",
 					accept_word = "<M-w>",
@@ -43,9 +43,6 @@ return {
 	},
 	{
 		"CopilotC-Nvim/CopilotChat.nvim",
-		branch = "copilot/fix-models-list-error",
-		version = false,
-		cmd = "CopilotChat",
 		dependencies = {
 			{ "nvim-lua/plenary.nvim", branch = "master" },
 		},
@@ -54,7 +51,7 @@ return {
 			local user = vim.env.USER or "User"
 			user = user:sub(1, 1):upper() .. user:sub(2)
 			return {
-				model = "gpt-4o-mini-2024-07-18",
+				model = "auto",
 				auto_insert_mode = false,
 				headers = {
 					user = "  " .. user .. " ",
@@ -67,8 +64,8 @@ return {
 			}
 		end,
 		keys = {
-			{ "<c-s>", "<CR>", ft = "copilot-chat", desc = "Submit Prompt", remap = true },
-			{ "<leader>a", "", desc = "+ai", mode = { "n", "x" } },
+			{ "<c-s>",     "<CR>", ft = "copilot-chat", desc = "Submit Prompt", remap = true },
+			{ "<leader>a", "",     desc = "+ai",        mode = { "n", "x" } },
 			{
 				"<leader>aa",
 				function()
