@@ -10,7 +10,7 @@ alias tree3='eza --tree --level=3 --icons --group-directories-first --git-ignore
 compdef eza=ls # reuse the ls completion for eza
 
 # Better cat
-alias cat='batcat'
+alias cat='bat'
 
 # Disk usage
 alias df='df -h'

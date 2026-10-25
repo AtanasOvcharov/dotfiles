@@ -3,6 +3,10 @@ nvim/lazy-lock.json
 zsh/plugins
 zsh/.zcompdump
 zsh/.zshenv.local
+.zsh_history
+.zsh_sessions/
 
 tmux/plugins/
 tmux/theme.conf
+
+.DS_Store
