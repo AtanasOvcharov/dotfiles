@@ -18,7 +18,7 @@ config.font = wezterm.font("MesloLGS Nerd Font")
 -- Window
 config.enable_wayland = false
 config.window_background_opacity = 0.98
-config.window_decorations = "RESIZE"
+config.window_decorations = "TITLE | RESIZE"
 config.window_padding = { left = 10, right = 10, top = 8, bottom = 6 }
 
 -- Dim panes you're not focused on
